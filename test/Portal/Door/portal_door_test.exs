@@ -1,5 +1,5 @@
 defmodule Portal.DoorTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
 
   test "able to start a door" do
     { status, pid } = Portal.Door.start_link(:blue)
