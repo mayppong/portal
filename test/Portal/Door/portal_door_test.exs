@@ -4,6 +4,7 @@ defmodule Portal.DoorTest do
   test "able to start a door" do
     { status, pid } = Portal.Door.start_link(:blue)
     assert status == :ok
+    assert pid != nil
   end
 
   test "able to push data to a door" do
